@@ -1,6 +1,53 @@
 /* Add your own custom styles here */
 
+/* HEADER */
+
 /* HEADER COLOR */
 .header {
-    background-color: #357878;
+    background-color: #ffffff;
 }
+
+/* NAVIGATION BAR */
+/* ADDS UNDERLINE ANIMATION TO EACH NAV */
+.nav-link-animated {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color, #000000);
+    transition: width 0.3s ease;
+    transform-origin: center;
+  }
+  
+  &:hover::after,
+  &.active::after {
+    width: 100%;
+  }
+}
+
+body:not(.home) .nav-link-animated.active::after,
+body.home .nav-item:not(:first-child) .nav-link-animated.active::after {
+  width: 100%;
+}
+
+body.home .nav-item:first-child .nav-link-animated::after {
+  width: 0;
+}
+body.home .nav-item:first-child .nav-link-animated:hover::after {
+  width: 100%;
+}
+
+/* NAVIGATION COLOR */
+.nav-link {
+    @apply text-[#333d95] hover:text-[#6269ad];
+  }
+
+/* NAV FONT (Make sure to change in config file too) */
+  .nav-link, .nav-dropdown-link {
+    font-family: 'Lato', sans-serif;
+  }

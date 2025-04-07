@@ -132,6 +132,11 @@ lazy = true
 link = "plugins/font-awesome/v6/icons.css"
 lazy = true
 
+# NAV BAR FONT
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap"
+lazy = false
+
 # JS Plugins
 [[params.plugins.js]]
 link = "js/search.js"
@@ -160,3 +165,4 @@ lazy = true
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js"
 lazy = true
+

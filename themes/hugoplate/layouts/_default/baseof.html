@@ -52,3 +52,8 @@
     {{ partialCached "essentials/script.html" . }}
   </body>
 </html>
+
+
+<!-- for underline -->
+<body class="{{ if .IsHome }}home{{ end }} {{ with .Params.body_class }}{{ . }}{{ end }}">
+</body>

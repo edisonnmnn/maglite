@@ -6,7 +6,7 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "LEARN MORE"
+    label: "CLICK ME"
     link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
