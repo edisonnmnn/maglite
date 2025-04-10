@@ -51,3 +51,14 @@ body.home .nav-item:first-child .nav-link-animated:hover::after {
   .nav-link, .nav-dropdown-link {
     font-family: 'Lato', sans-serif;
   }
+
+/* CUSTOMIZE NAV BUTTON (CONTACT US) */
+.btn-outline-primary {
+  color: #333d95;  /* Blue text color */
+  border-color: #333d95;  /* Blue border color */
+}
+.btn-outline-primary:hover {
+  background-color: #333d95;  /* Blue background color on hover */
+  color: #ffffff;  /* White text color on hover */
+  border-color: #333d95;  /* Keep blue border color */
+}
