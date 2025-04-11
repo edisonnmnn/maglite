@@ -66,16 +66,21 @@ body.home .nav-item:first-child .nav-link-animated:hover::after {
 
 
 /* !!BANNER!! */
-/* Make banner button transparent */
-.banner .btn {
-  background-color: transparent;
-  border: 2px solid #333d95; /* Same as your nav link color */
-  color: #333d95;
-  transition: all 0.3s ease;
+
+/* Transparent Banner Button */
+.section .btn-primary {
+  background-color: #fef7a2;
+  color: #000000; /* dark text for contrast */
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+
 }
 
-/* Optional: Hover effect */
-.banner .btn:hover {
-  background-color: #333d95;
-  color: #ffffff;
+/* Hover effect */
+.section .btn-primary:hover {
+  background-color: #e6b800; /* slightly darker gold on hover */
+  color: #000000;
 }
+
