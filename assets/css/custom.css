@@ -7,7 +7,8 @@
     background-color: #ffffff;
 }
 
-/* NAVIGATION BAR */
+/* !!NAVIGATION BAR!! */
+
 /* ADDS UNDERLINE ANIMATION TO EACH NAV */
 .nav-link-animated {
   position: relative;
@@ -61,4 +62,20 @@ body.home .nav-item:first-child .nav-link-animated:hover::after {
   background-color: #333d95;  /* Blue background color on hover */
   color: #ffffff;  /* White text color on hover */
   border-color: #333d95;  /* Keep blue border color */
+}
+
+
+/* !!BANNER!! */
+/* Make banner button transparent */
+.banner .btn {
+  background-color: transparent;
+  border: 2px solid #333d95; /* Same as your nav link color */
+  color: #333d95;
+  transition: all 0.3s ease;
+}
+
+/* Optional: Hover effect */
+.banner .btn:hover {
+  background-color: #333d95;
+  color: #ffffff;
 }
